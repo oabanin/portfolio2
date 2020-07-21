@@ -63,12 +63,74 @@ h1, h2, h3, h4, h5, h6 {
 	height: 100vh;
 }
 
-.nav-shopping-cart {
-	display: inline;
+/* Nav 
+===================*/
+.nav{
+	display: flex;
 }
 
+
 .nav-link {
+	display: block;
+	position: relative;
+
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 400;
-	text-transform:uppercase;
+	font-size: 1rem;
+	text-transform: uppercase;
+	color:#fff;
+	text-decoration: none;
+
+	padding-bottom: 12px;
+	margin-left:50px;
+
+	transition: color .2s linear;
+}
+
+.nav-link::after {
+	content: "";
+	
+	position: absolute;
+	bottom: 0;
+	left:0;
+
+	background-color: #fce38a;
+	width: 100%;
+	height: 3px;
+
+	opacity: 0;
+	transition: opacity .2s linear;
+}
+
+.nav-link:hover {
+	color: #fce38a;
+}
+
+.nav-link:hover::after {
+	opacity: 1;
+}
+
+/* Nav icons 
+===================*/
+
+
+
+.nav-shopping-cart {
+	margin-left: 3.5rem;
+}
+
+.nav-search{
+	margin-left: 2.85rem;
+}
+
+.nav-search-svg{
+	fill: #fff;
+	fill-rule: evenodd;
+}
+
+
+.nav-search:hover,
+.nav-search-svg:hover
+{
+	fill: #fce38a;
 }
