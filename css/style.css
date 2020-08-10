@@ -633,6 +633,15 @@ hr{
 	background-color: #f8f8f8;
 }
 
+.reviews {
+	padding: 0 110px;
+}
+
+.reviews__item {
+	padding-left: 205px;
+	position: relative;
+}
+
 .reviews__text {
 	font-family: Roboto;
 	font-style: italic;
@@ -640,18 +649,8 @@ hr{
 	font-size: 1.71rem;
 	line-height: 1.5;
 	color: #999;
-}
 
-.reviews__text:after{
-	content: "";
-	display: block;
-	
-	width: 60px;
-	height: 3px;
-	background-color: black;
-
-	margin: 60px  auto 50px;
-
+	margin-bottom: 15px;
 }
 
 .reviews__svg_rect {
@@ -663,12 +662,37 @@ hr{
   }
 
 .reviews__svg_logo {
+	position: absolute;
+	left: 0;
+	top:0;
+	z-index: 1;
+
 	width: 150px;
 	height: 150px;
+
 	cursor: pointer;
 }
 
 .reviews__svg_logo:hover {
 	background:linear-gradient(to bottom, #f38181, #fce38a);
 }
-  
+
+.reviews__author {
+	font-family: 'Kaushan Script', cursive;
+	font-size: 1.71rem;
+	font-weight: 400;
+	color:#333;
+}
+
+.reviews__author:before {
+	content: "";
+	vertical-align: middle;
+	display: inline-block;
+	margin-right: 10px;
+    
+	width: 60px;
+	height: 3px;
+	background-color: #f38181;
+
+	
+}
