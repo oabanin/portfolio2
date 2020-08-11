@@ -41,6 +41,7 @@ hr{
 	border:0;
 }
 
+
 .container {
 	width: 100%;
 	max-width: 1200px;
@@ -183,6 +184,7 @@ hr{
 	margin-left: 2.85rem;
 }
 
+/* Inline SVG-icon */
 .nav__search-svg{
 	fill: #fff;
 	fill-rule: evenodd;
@@ -193,6 +195,8 @@ hr{
 	fill: #fce38a;
 }
 
+
+/* Icomoon font icons */
 .icon-nav-shopping-cart:before {
   content: "\e900";
 }
