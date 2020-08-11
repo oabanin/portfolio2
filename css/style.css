@@ -638,6 +638,7 @@ hr{
 }
 
 .reviews {
+	position: relative;
 	padding: 0 110px;
 }
 
@@ -697,6 +698,33 @@ hr{
 	width: 60px;
 	height: 3px;
 	background-color: #f38181;
+}
 
-	
+.reviews__btn {
+	position: absolute;
+	top: 50%;
+	z-index: 1;
+
+	font-size: 0;
+	color: transparent;
+
+	transform: translateY(-50%);
+
+	width: 15px;
+	height: 15px;
+
+	border-left: 3px solid #d0d0d0;
+	border-top: 3px solid #d0d0d0;
+}
+
+.reviews__btn--prev{
+	left: 10px;
+
+	transform: rotate(-45deg);
+}
+
+.reviews__btn--next{
+	right: 10px;
+
+	transform: rotate(135deg);
 }
