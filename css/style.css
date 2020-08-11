@@ -345,31 +345,31 @@ hr{
 	color:#999;
 }
 
-/* About */
+/* Card */
 
-.about {
+.card {
 	margin-top: 80px;
 
 	display: flex;
 	justify-content: space-between;
 }
 
-.about__item{
+.card__item{
 	position: relative;
 
 	width: 380px;
 	background-color: #95e1d3;
 }
 
-.about__item:hover .about__image{
+.card__item:hover .card__image{
 	transform: translate3d(-10px, -10px,0);
 }
 
-.about__item:hover .about__image img {
+.card__item:hover .card__image img {
 	opacity: .1;
 }
 
-.about__text {
+.card__text {
 	position: absolute;
 	top:50%;
 	left:0;
@@ -388,16 +388,16 @@ hr{
 	opacity: 0;
 	transition: opacity .2s linear;
 }
-.about__item:hover .about__text{
+.card__item:hover .card__text{
 	opacity: 1;
 }
 
-.about__image {
+.card__image {
 	background: linear-gradient(to bottom, #f38181,#fce38a);
 	transition: transform .2s linear; 
 }
 
-.about__image img {
+.card__image img {
 	display: block;
 	transition: opacity .1s linear;
 }
@@ -759,7 +759,7 @@ hr{
 	transition: opacity .1s linear;
 }
 
-.team__social-icons {
+.social {
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -773,7 +773,7 @@ hr{
 	opacity: 0;
 }
 
-.social-icon {
+.social__icon {
 	width: 56px;
 	height: 56px;
 
@@ -782,11 +782,11 @@ hr{
 	border-right: 1px solid #f9bd87;
 }
 
-.social-icon:last-of-type {
+.social__icon:last-of-type {
 	border: 0;
 }
 
-.social-icon:hover {
+.social__icon:hover {
 	background-color: #f38181;
 	border: 0;
 }
@@ -799,7 +799,7 @@ hr{
 	opacity: .1;
 }
 
-.team__item:hover .team__social-icons{
+.team__item:hover .social{
 	opacity: 1;
 }
 
