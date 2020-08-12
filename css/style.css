@@ -879,3 +879,20 @@ hr{
 	margin-top: 5px;
 
 }
+
+/* Reviews 2 */
+.reviews__item-photo {
+	padding-left: 245px;
+	position: relative;
+}
+
+.reviews__photo {
+	position: absolute;
+	left: 0;
+	z-index: 2;
+
+	width: 210px;
+	height: 210px;
+	
+}
+
