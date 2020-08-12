@@ -962,3 +962,85 @@ hr{
 }
 
 
+/* Blog */
+
+.blog {
+	display: flex;
+}
+
+.blog__item {
+	flex: 1 1 0;
+	max-width: 380px;
+}
+
+.blog__image {
+	position: relative;
+
+	width: 100%;
+}
+
+.blog__date {
+	position: absolute;
+	bottom: 10px;
+	left: -10px;
+
+	width: 60px;
+	height: 70px;
+
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+	justify-content: center;
+
+	background-color: #95e1d3;
+}
+
+.blog__day {
+	font-family: Montserrat;
+	font-weight: 700;
+	font-size: 2.14rem;
+	line-height: 1;
+}
+
+.blog__month {
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.07rem;
+	font-style: italic;
+	font-weight: 300;
+}
+
+.blog__title {
+	font-family: Montserrat;
+	text-transform: uppercase;
+	color: #333;
+
+	margin: 20px 0;
+}
+
+.blog__text {
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.07rem;
+	line-height: 1.6;
+
+	font-weight: 400;
+	color: #999;
+}
+
+.blog--hr {
+	margin: 20px 0;
+}
+
+.blog__stat{
+	display: flex;
+	align-items: center;
+}
+
+.blog__views, .blog__comments{
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.07rem;
+	line-height: 1.6;
+	font-style: italic;
+	font-weight: 300;
+	color: #999;
+}
+
