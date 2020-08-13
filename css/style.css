@@ -805,6 +805,9 @@ hr{
   	vertical-align: middle;
 
 
+}
+
+.social i {
 	color: #f38181;
 	font-size: 2rem;
 	line-height: 1;
@@ -1116,17 +1119,149 @@ hr{
 	background-color: #f8f8f8;
 }
 
+.footer__inner {
+	padding-bottom: 65px;
+	display: flex;
+	justify-content: space-between;
+}
+
+
 .footer__logo {
-	color: #999;
+	color: #ccc;
 	font-style: Montserrat;
 	font-weight: 700;
 	font-size: 3.28rem;
+
+	margin-bottom: 30px;
+}
+
+.footer__col--first {
+	width: 40%;
+}
+
+.footer__col--second {
+	width: 29%;
+}
+
+.footer__col--third {
+	width: 22%;
 }
 
 .footer__text {
+	margin-bottom: 30px;
+
 	font-family: Roboto;
 	font-size:1.07rem;
 	line-height: 1.6;
 	font-weight: 400;
 	color: #999;
+}
+
+.footer__social {
+	margin-bottom: 25px;
+}
+
+
+.footer__social-header {
+	color: #333;
+
+	border-bottom: 1px solid #e5e5e5;
+
+	padding-bottom: 15px;
+}
+
+.footer__social-header b {
+	font-weight: 700;
+	font-size: 1.28rem;
+}
+
+.footer__social-content{
+	line-height: 1;
+	vertical-align: bottom;
+	padding-top: 15px;
+
+	font-size: 1.07rem;
+	color: #999;
+	font-weight: 300;
+	font-style: italic;
+}
+
+.footer__social-content a {
+	display: inline-block;
+
+	margin-left: 10px;
+
+	color: #95e1d3;
+	font-size:1.1rem;
+}
+
+
+
+/* subscribe */
+
+.subscribe {
+	max-width: 380px;
+	display: flex;
+}
+
+.subscribe__input {
+	width: 60%;
+	padding: 12px;
+	height: 40px;
+
+	line-height: 1.1;
+	font-size: 1.07;
+	font-family: Roboto;
+	font-weight: 300;
+	font-style: italic;
+	
+	color: #333;
+	border: 1px solid #e7e7e7;
+	border-right: 0;
+
+}
+
+.subscribe__input:hover {
+	outline: none;
+	border-color: #95e1d3;
+}
+
+.subscribe__input::placeholder{
+	color: #ccc;
+}
+
+.subscribe__btn{
+	width: 40%;
+	height: 40px;
+	padding: 12px 30px;
+
+	line-height: 1.1;
+	font-family: Montserrat;
+	font-weight: 700;
+	font-size: 1rem;
+	color: #fff;
+	text-transform: uppercase;
+	text-align: center;
+
+	border: 0;
+	background-color: #95e1d3;
+
+	cursor: pointer;
+
+	transition: background .2s linear;
+	
+
+}
+
+.subscribe__btn:hover {
+	background-color: #51a898;
+}
+
+.subscribe__btn:focus{
+	outline: none;
+}
+
+.footer__title {
+	text-transform: uppercase;
+	color: #333;
 }
