@@ -1108,3 +1108,25 @@ hr{
 .map__text a:hover {
 	text-decoration: underline;
 }
+
+/* Footer */
+
+.footer {
+	padding-top: 65px;
+	background-color: #f8f8f8;
+}
+
+.footer__logo {
+	color: #999;
+	font-style: Montserrat;
+	font-weight: 700;
+	font-size: 3.28rem;
+}
+
+.footer__text {
+	font-family: Roboto;
+	font-size:1.07rem;
+	line-height: 1.6;
+	font-weight: 400;
+	color: #999;
+}
