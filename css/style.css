@@ -44,7 +44,8 @@ hr{
 
 .container {
 	width: 100%;
-	max-width: 1200px;
+	max-width: 1230px;
+	padding: 0 15px;
 	margin: 0 auto;
 }
 
@@ -65,6 +66,7 @@ hr{
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+
 }
 
 .header__logo {
@@ -127,6 +129,7 @@ hr{
 /* Nav */
 .nav{
 	display: flex;
+	flex-wrap: wrap;
 }
 
 
@@ -348,7 +351,7 @@ hr{
 /* Card */
 
 .card {
-	margin-top: 80px;
+	margin-top: 80px 0 -15px;
 
 	display: flex;
 	justify-content: space-between;
@@ -361,7 +364,8 @@ hr{
 }
 
 .card__item{
-	width: 380px;
+	width: 33.33333%;
+	padding: 0 15px;
 }
 
 .card__inner:hover .card__image{
@@ -402,6 +406,8 @@ hr{
 
 .card__image img {
 	display: block;
+	max-width: 100%;
+	height: auto;
 	transition: opacity .1s linear;
 }
 
@@ -818,6 +824,15 @@ hr{
 
 }
 
+/*Logos*/
+.logos {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+
+
 /* works */
 
 .works {
@@ -1154,6 +1169,21 @@ hr{
 	justify-content: space-between;
 }
 
+
+@media (max-width: 1230px) {
+	.footer__col--first {
+		width: 33%;
+	}
+
+	.footer__col--third {
+		width: 35%;
+	}
+	.footer__col--third {
+		width: 27%;
+	}
+}
+
+
 .footer__text {
 	margin-bottom: 30px;
 
@@ -1368,4 +1398,94 @@ hr{
 
 .copyright span {
 	color: #f38181;
+}
+
+@media (max-width: 1230px) {
+	/* Intro */
+
+	.intro__subtitle {
+		font-size: 4rem;
+	}
+
+	.intro__title {
+		font-size:9rem;
+	}
+}
+
+@media (max-width: 990px) {
+	/* Intro */
+
+	.intro__subtitle {
+		font-size: 3rem;
+	}
+
+	.intro__title {
+		font-size:7rem;
+	}
+}
+
+@media (max-width: 770px) {
+	/* Intro */
+
+	.nav {
+		display: none;
+	}
+
+	/*Section*/
+	.section {
+		padding: 40px 0;
+	}
+
+	.card__item {
+		flex-shrink: 2;
+	}
+
+	/*Header*/
+	
+	.intro__subtitle {
+		font-size: 3rem;
+	}
+
+	.intro__title {
+		font-size:5rem;
+	}
+
+	.slider__text {
+		display: none;
+	}
+
+	.slider__item.active:before{
+		width: 50%;
+	}
+
+}
+
+@media (max-width: 575px) {
+	/* Intro */
+
+	.intro__subtitle {
+		font-size: 1.5rem;
+	}
+
+	.intro__title {
+		font-size:3rem;
+	}
+
+	/*Section*/
+
+	.section__title {
+		font-size: 1.5rem;
+	}
+
+	.section__suptitle {
+		font-size: 1.3rem;
+	}
+
+	.section__title:after {
+		margin: 20px auto;
+	}
+
+	.section__header {
+		margin: 0 auto 30px;
+	}
 }
