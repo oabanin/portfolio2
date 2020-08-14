@@ -1135,16 +1135,24 @@ hr{
 	margin-bottom: 30px;
 }
 
+.footer__col {
+	border: 1px solid black;
+
+}
+
 .footer__col--first {
-	width: 40%;
+	width: 35%;
 }
 
 .footer__col--second {
-	width: 29%;
+	width: 35%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 }
 
 .footer__col--third {
-	width: 22%;
+	width: 25%;
 }
 
 .footer__text {
@@ -1249,8 +1257,6 @@ hr{
 	cursor: pointer;
 
 	transition: background .2s linear;
-	
-
 }
 
 .subscribe__btn:hover {
@@ -1264,4 +1270,52 @@ hr{
 .footer__title {
 	text-transform: uppercase;
 	color: #333;
+}
+
+/* Footer Blog*/
+
+.footer__blog {
+	margin: -5px 0;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+
+}
+
+.footer__blog-item {
+	display: flex;
+	justify-content: space-between;
+	border: 1px solid red;
+
+	margin: 5px 0;
+}
+
+.footer__blog-info {
+	width: 65%;
+	align-self: center;
+}
+
+.footer__blog-img {
+	display: block;
+	width: 100%;
+	max-width: 120px;
+}
+
+.footer__blog-title {
+	color: #333;
+	font-family: Montserrat;
+	font-weight: 400;
+	font-size: 1.1rem;
+	line-height: 1.5;
+	text-transform: uppercase;
+}
+
+.footer__blog-date {
+	color: #999;
+	font-family: Roboto;
+	font-weight: 300;
+	font-style: italic;
+	font-size: 0.92rem;
 }
