@@ -535,10 +535,20 @@ hr{
 /* We Do */
 .wedo{
 	display: flex;
+	flex-wrap: wrap;
+	margin: 0 -15px;
 }
 
 .wedo__item {
-	flex: 1;
+	flex: 50%;
+	margin: 0 15px;
+}
+
+.wedo__image {
+	max-width: 100%;
+	height: auto;
+	display: block;
+	
 }
 
 /* Accordion */
@@ -1520,6 +1530,17 @@ hr{
 
 	.service__logo{ 
 		left: 0;
+	}
+
+	/* Wedo */
+
+
+	.wedo__image {
+		display: none;
+	}
+
+	.wedo__item {
+		width: 100%;
 	}
 
 
