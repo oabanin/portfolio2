@@ -456,16 +456,20 @@ hr{
 
 .services{
 	display: flex;
+	flex-wrap: wrap;
 }
 
 
 .service {
 	position: relative;
-	padding-left: 85px;
-	padding-right: 35px;
+	padding: 0 35px 40px 85px;
+	width: 33.3333%;	
 
-	flex: 1 1 0;
-	
+	margin-bottom: 40px;
+}
+
+.service__border-bottom {
+	border-bottom: 1px solid #e5e5e5;
 }
 
 .service__logo{
@@ -1434,6 +1438,15 @@ hr{
 		border-right: 0;
 	}
 
+	/* Services */
+	.service {
+		width: 50%;
+		padding-bottom: 0;
+	}
+
+	.service__border-bottom {
+		border-bottom: 0;
+	}
 
 }
 
@@ -1482,6 +1495,22 @@ hr{
 		width: 50%;
 	}
 
+	/* Services */
+	.services{
+		justify-content: center;
+	}
+
+	.service {
+		width: 100%;
+		max-width: 400px;
+		border-bottom: 1px solid #e5e5e5;
+		padding-left: 55px;
+		padding-right: 0;
+	}
+
+	.service__logo{ 
+		left: 0;
+	}
 
 }
 
