@@ -519,6 +519,8 @@ hr{
 
 .devices__item {
 	display: block;
+	max-width: 100%;
+	height: auto;
 }
 
 .devices__item--iphone {
@@ -526,6 +528,8 @@ hr{
 	z-index: 99;
 	right: -40px;
 	bottom: -80px;
+
+	
 }
 
 /* We Do */
@@ -1477,6 +1481,12 @@ hr{
 		margin-bottom: 0;
 	}
 
+	/*Section*/
+
+	.section--feature{
+		padding-bottom: 0;
+	}
+
 	/*Header*/
 	
 	.intro__subtitle {
@@ -1511,6 +1521,8 @@ hr{
 	.service__logo{ 
 		left: 0;
 	}
+
+
 
 }
 
@@ -1555,5 +1567,15 @@ hr{
 
 	.stat__num {
 		font-size: 4.14rem;
+	}
+
+	.devices {
+		max-width: 320px;
+	}
+
+	.devices__item--iphone {
+		width: 180px;
+		bottom: -50px;
+		right: -80px;
 	}
 }
