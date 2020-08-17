@@ -80,9 +80,8 @@ hr{
 	font-size: 2.14rem;
 }
 
-.header--fixed {
+.header.fixed {
 	box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.2);
-
 
 	background-color: #eb8b8d;
 
@@ -90,9 +89,12 @@ hr{
 	top: 0;
 	right: 0;
 	left: 0;
-	padding: 10px 0;
 
 	transform: translate3d(0, 0, 0);
+}
+
+.header.active {
+	background-color: #eb8b8d
 }
 
 /* Intro */
@@ -254,6 +256,7 @@ hr{
 	display: none;
 }
 
+
 .nav-toggle__item {
 	font-size: 0;
 	color: transparent;
@@ -272,7 +275,7 @@ hr{
 	bottom: 0;
 	margin: auto;
 
-
+	transition: background .2s linear;
 }
 
 .nav-toggle__item:before,
@@ -288,6 +291,9 @@ hr{
 	position: absolute;
 	left: 0;
 	z-index: 1;
+
+	transition: transform .2s linear;
+
 }
 
 .nav-toggle__item:before {
@@ -298,6 +304,22 @@ hr{
 	bottom: -8px;
 }
 
+/*Active burger*/
+
+.nav-toggle.active .nav-toggle__item {
+	background: none;
+}
+
+
+.nav-toggle.active .nav-toggle__item:before {
+	transform: rotate(45deg);
+	top: 0px;
+}
+
+.nav-toggle.active .nav-toggle__item:after {
+	transform: rotate(-45deg);
+	bottom: 0px;
+}
 
 /* Icomoon font icons */
 .icon-nav-shopping-cart:before {
@@ -1667,7 +1689,7 @@ hr{
 
 	/*header*/
 	.header {
-		padding-top: 10px;
+		padding-top: 10px 0;
 	}
 
 	.nav-toggle {
@@ -1679,6 +1701,8 @@ hr{
 	.intro {
 		min-height: 635px;
 	}
+
+	
 
 	.nav {
 		display: none;
@@ -1696,6 +1720,8 @@ hr{
 		display: block;
 		margin: 0;
 		padding: 8px 20px;
+
+		width: 100%;
 	}
 
 
