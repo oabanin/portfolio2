@@ -1704,6 +1704,7 @@ hr{
 	}
 
 	
+	/*navigation*/
 
 	.nav {
 		display: none;
@@ -1715,6 +1716,10 @@ hr{
 		z-index: 999;
 
 		background-color: #eb8b8d;
+	}
+	
+	.nav.active {
+		display: block;
 	}
 
 	.nav__link, .nav__shopping-cart, .nav__search{

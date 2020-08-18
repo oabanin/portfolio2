@@ -36,9 +36,11 @@
             const blockId = $(this).data('scroll');
             const blockOffset = $(blockId).offset().top;
 
-            console.log(blockOffset);
+            $('[data-scroll]').removeClass('active');
+            $(this).addClass('active');
 
-            $('html, body').animate({
+
+             $('html, body').animate({
                 scrollTop: blockOffset
               }, 800, function(){
 
@@ -47,5 +49,13 @@
               });
         })
         
+        /*burger-menu*/
+        $('#nav-toggle').click(function(event){
+            event.preventDefault;
+            $(this).toggleClass( 'active');
+            $('#nav').toggleClass( 'active');
+
+        });
+
     });
 })(jQuery);
