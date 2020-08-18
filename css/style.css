@@ -91,10 +91,12 @@ hr{
 	left: 0;
 
 	transform: translate3d(0, 0, 0);
+
+	padding: 10px 0;
 }
 
 .header.active {
-	background-color: #eb8b8d
+	background-color: #eb8b8d;
 }
 
 /* Intro */
