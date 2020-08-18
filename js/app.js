@@ -28,6 +28,24 @@
             scrollOffset = $(this).scrollTop();
             checkFixedHeaderMenu(scrollOffset);
         });
+
+        /*Smooth scroll*/
+        $('[data-scroll]').on('click', function (event){
+            event.preventDefault();
+
+            const blockId = $(this).data('scroll');
+            const blockOffset = $(blockId).offset().top;
+
+            console.log(blockOffset);
+
+            $('html, body').animate({
+                scrollTop: blockOffset
+              }, 800, function(){
+
+                // Add hash (#) to URL when done scrolling (default click behavior)
+                window.location.hash = blockId;
+              });
+        })
         
     });
 })(jQuery);
