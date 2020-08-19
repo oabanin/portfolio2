@@ -2,10 +2,14 @@
 ; (function ($, undefined) {
     $(function () {
 
+        $data_scroll = $('[data-scroll]');
+        $data_collapse = $('[data-collapse]');
+        $nav_toggle = $('#nav-toggle');
+        $nav = $('#nav');
 
         /*Change active on scroll*/
         const offsets = {};
-        $.each($('[data-scroll]'), function (index, value) {
+        $.each($data_scroll, function (index, value) {
             const scrolledBlock = $(this).data('scroll');
             if (index != 0) {
                 let offset = $(scrolledBlock).offset().top;
@@ -38,7 +42,7 @@
                     (scrollOffset <= (+offset + 100))){
 
                     const active = offsets[offset];
-                        $('[data-scroll]').removeClass('active');
+                        $data_scroll.removeClass('active');
                     $("[data-scroll=\""+active).addClass('active');
                     break;
                 }
@@ -55,7 +59,7 @@
         });
 
         /*Smooth scroll*/
-        $('[data-scroll]').on('click', function (event) {
+        $data_scroll.on('click', function (event) {
             event.preventDefault();
 
             const blockId = $(this).data('scroll');
@@ -63,7 +67,7 @@
             if ($(window).width() < 720) blockOffset -= 30;
 
 
-            $('[data-scroll]').removeClass('active');
+            $data_scroll.removeClass('active');
             $(this).addClass('active');
 
             $('html, body').animate({
@@ -72,15 +76,28 @@
         })
 
         /*burger-menu*/
-        $('#nav-toggle').click(function (event) {
-            event.preventDefault;
+        $nav_toggle.click(function (event) {
+            event.preventDefault();
             $(this).toggleClass('active');
-            $('#nav').toggleClass('active');
+            $nav.toggleClass('active');
         });
 
-        $('#nav .nav__link').click(function () {
-            $('#nav').hasClass('active') && $('#nav').removeClass('active');
-            $('#nav-toggle').hasClass('active') && $('#nav-toggle').removeClass('active');
+        $('#nav').children('.nav__link').click(function () {
+            $nav.hasClass('active') && $nav.removeClass('active');
+            $nav_toggle.hasClass('active') && $nav_toggle.removeClass('active');
+        });
+
+        /* Collapse */
+        $data_collapse.click(function(event){
+            event.preventDefault();
+            const $blockId = $(this).data('collapse');
+            $($blockId).slideToggle();
+
+            
+            $(this).parent().toggleClass('active'); 
+           
+            
+            
         });
 
     });
