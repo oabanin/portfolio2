@@ -8,6 +8,8 @@
 		href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@400;700&family=Roboto:ital,wght@0,400;1,300&display=swap"
 		rel="stylesheet">
 	<link rel="stylesheet" href="./css/style.css">
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
 	<title>Document</title>
 </head>
 
@@ -265,20 +267,38 @@
 		<div class="section section--gray">
 			<div class="container">
 				<div class="reviews">
-					<a class="reviews__btn reviews__btn--prev" href="#">Prev</a>
-					<a class="reviews__btn reviews__btn--next" href="#">Next</a>
-					<div class="reviews__item">
-						<div class="reviews__svg_logo">
-							<svg xmlns="http://www.w3.org/2000/svg" width="153" height="153" viewBox="0 0 153 153">
-								<rect class="reviews__svg_rect" x="1.5" y="1.5" width="150" height="150" />
-								<image class="reviews__svg_comments" x="44" y="45" width="63" height="61" xlink:href="./img/reviews/SPEECH.svg" />
-							</svg>
+					<div data-slider>
+						<div>
+							<div class="reviews__item">
+								<div class="reviews__svg_logo">
+									<svg xmlns="http://www.w3.org/2000/svg" width="153" height="153" viewBox="0 0 153 153">
+										<rect class="reviews__svg_rect" x="1.5" y="1.5" width="150" height="150" />
+										<image class="reviews__svg_comments" x="44" y="45" width="63" height="61" xlink:href="./img/reviews/SPEECH.svg" />
+									</svg>
+								</div>
+								<div class="reviews__text">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+									tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+									exercitation.”
+								</div>
+								<div class="reviews__author">Jon Doe</div>
+							</div>
 						</div>
-						<div class="reviews__text">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-							exercitation.”
+
+						<div>
+							<div class="reviews__item">
+								<div class="reviews__svg_logo">
+									<svg xmlns="http://www.w3.org/2000/svg" width="153" height="153" viewBox="0 0 153 153">
+										<rect class="reviews__svg_rect" x="1.5" y="1.5" width="150" height="150" />
+										<image class="reviews__svg_comments" x="44" y="45" width="63" height="61" xlink:href="./img/reviews/SPEECH.svg" />
+									</svg>
+								</div>
+								<div class="reviews__text">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+									tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+									exercitation.”
+								</div>
+								<div class="reviews__author">Jon Doe</div>
+							</div>
 						</div>
-						<div class="reviews__author">Jon Doe</div>
 					</div>
 				</div>
 			</div>
@@ -479,15 +499,24 @@
 		<div class="section">
 			<div class="container">
 				<div class="reviews">
-					<a class="reviews__btn reviews__btn--prev" href="#">Prev</a>
-					<a class="reviews__btn reviews__btn--next" href="#">Next</a>
-					<div class="reviews__item-photo">
-						<img class="reviews__photo" src="./img/reviews/photo.png" alt="ss">
-						<div class="reviews__text">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-							exercitation.”
+
+					<div data-slider>
+						<div>
+							<div class="reviews__item-photo">
+								<img class="reviews__photo" src="./img/reviews/photo.png" alt="ss">
+								<div class="reviews__text">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”
+								</div>
+								<div class="reviews__author">Joshua Earle</div>
+							</div>
 						</div>
-						<div class="reviews__author">Joshua Earle</div>
+						<div>
+							<div class="reviews__item-photo">
+								<img class="reviews__photo" src="./img/reviews/photo.png" alt="ss">
+								<div class="reviews__text">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”
+								</div>
+								<div class="reviews__author">Joshua Earle</div>
+							</div>
+						</div>			
 					</div>
 				</div>
 			</div>
@@ -762,6 +791,8 @@
 </script>
 <script src="https://kit.fontawesome.com/e77123a3ab.js" crossorigin="anonymous"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script src="./js/app.js"></script>
+
 
 </html>

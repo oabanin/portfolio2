@@ -91,14 +91,18 @@
         $data_collapse.click(function(event){
             event.preventDefault();
             const $blockId = $(this).data('collapse');
-            $($blockId).slideToggle();
-
-            
-            $(this).parent().toggleClass('active'); 
-           
-            
-            
+            $($blockId).slideDown();          
+            $(this).parent().toggleClass('active');            
         });
+
+        /* Slider */
+        $('[data-slider]').slick({
+          infinite: true,
+          fade: false,
+          slidesToShow: 1,
+          slidesToScroll: 1
+        });
+
 
     });
 })(jQuery);
